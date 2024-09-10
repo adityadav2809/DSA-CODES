@@ -1,0 +1,21 @@
+Step 1: Initialize:
+
+    Create a new node head using the first element of the array (arr[0]).
+    Set a pointer mover to head to keep track of the current end of the linked list.
+
+Step 2: Iterate through the array:
+
+    For each element in the array starting from the second element (i = 1 to i < arr.size()):
+    Create a new node temp with the current array element (arr[i]).
+    Set the next pointer of mover to temp (link the new node to the current end of the list).
+    Move the mover pointer to temp (update the end of the list to the new node).
+
+Step 3: Return the head:
+
+    Return the head of the linked list, which represents the start of the linked list formed from the array.
+    This algorithm efficiently converts the array into a singly linked list by iterating through the array once and creating corresponding nodes for each element.
+
+Time and Space Complexity:
+
+    Time Complexity: O(n), where n is the size of the array. This is because we loop through the array once.
+    Space Complexity: O(n) for the new nodes created for each element in the array to form the linked list.
